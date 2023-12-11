@@ -43,10 +43,12 @@ struct ContentView: View {
                             //data to image conversiin
                             let convUiImage = UIImage(data: note.image!)
                             Image(uiImage: convUiImage!)
-                            ShareLink(
+                           
+                          ShareLink(
                                 item: note,
                                 preview: SharePreview(note.tag!,
                                                       image:  Image(uiImage: UIImage(data: note.image!)!)))
+                            
                         }
  
  
