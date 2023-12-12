@@ -47,10 +47,23 @@ class Note:  Codable{
         try container.encode(tag, forKey: .tag)
 
     }
+ 
+    func save() {
+             if let context=self.modelContext {
+                do {
+                    print("I'm gonna try and save the data")
+                    try context.save()
+                }catch(let error) {
+                    print("I found an errore \n")
+                    print("error: \(error.localizedDescription)")
+                }
+            } else {
+                print("modelContext is nil")
+            }
+        }
     
     
 }
-
 
 
 extension UTType {
@@ -65,3 +78,6 @@ extension Note : Transferable {
         }
     
 }
+
+
+ 

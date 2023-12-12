@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		522AD06B2B20D4F000B4051F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522AD06A2B20D4F000B4051F /* ContentViewModel.swift */; };
 		522AD06D2B20D73400B4051F /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522AD06C2B20D73400B4051F /* Note.swift */; };
-		52630C252B221CBF00C4C915 /* sharingTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52630C242B221CBF00C4C915 /* sharingTestView.swift */; };
 		E629D22E2B1F640700843CD9 /* NoteCraftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629D22D2B1F640700843CD9 /* NoteCraftApp.swift */; };
 		E629D2302B1F640700843CD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629D22F2B1F640700843CD9 /* ContentView.swift */; };
 		E629D2342B1F640800843CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E629D2332B1F640800843CD9 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		522AD06A2B20D4F000B4051F /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		522AD06C2B20D73400B4051F /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		52630C232B22103300C4C915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52630C242B221CBF00C4C915 /* sharingTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharingTestView.swift; sourceTree = "<group>"; };
 		E629D22A2B1F640700843CD9 /* NoteCraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteCraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E629D22D2B1F640700843CD9 /* NoteCraftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCraftApp.swift; sourceTree = "<group>"; };
 		E629D22F2B1F640700843CD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				E629D22F2B1F640700843CD9 /* ContentView.swift */,
-				52630C242B221CBF00C4C915 /* sharingTestView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,7 +169,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52630C252B221CBF00C4C915 /* sharingTestView.swift in Sources */,
 				522AD06B2B20D4F000B4051F /* ContentViewModel.swift in Sources */,
 				522AD06D2B20D73400B4051F /* Note.swift in Sources */,
 				E629D2302B1F640700843CD9 /* ContentView.swift in Sources */,

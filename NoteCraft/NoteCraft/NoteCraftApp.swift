@@ -8,6 +8,9 @@
 import SwiftUI
 import SwiftData
 
+  var sharedNote = Note(timestamp: Date.now, image: Data(), tag: "")
+
+
 @main
 class AppDelegate: NSObject, UIApplicationDelegate {
     
@@ -31,13 +34,15 @@ class AppDelegate: NSObject, UIApplicationDelegate {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
             let importedNote = try decoder.decode(Note.self, from: data)
-            
             print(importedNote.tag!)
             
             
             let newItem = Note(timestamp: importedNote.timestamp!, image: importedNote.image!, tag: importedNote.tag!)
             //context.insert(newItem)
-        } catch {
+            sharedNote = newItem
+ 
+            
+         } catch {
             print("Unable to load data: \(error)")
         }
         

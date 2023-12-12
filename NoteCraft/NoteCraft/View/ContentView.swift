@@ -36,6 +36,10 @@ struct ContentView: View {
                     context.insert(newItem)
                     noteTag = ""
                 }
+                
+                Button("Save Imported Note"){
+                    context.insert(sharedNote)
+                }
                 List{
                     ForEach(notes) { note in
                         VStack{
